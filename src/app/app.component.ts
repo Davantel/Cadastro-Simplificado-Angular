@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cadastroSP';
+  titulo = '';
+  pessoas = [
+  ];
+
+  cadastro() {
+    this.pessoas.push(this.titulo);
+    this.titulo = null;
+  }
 }
+
+
